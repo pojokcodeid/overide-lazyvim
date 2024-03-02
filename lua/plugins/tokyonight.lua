@@ -9,8 +9,8 @@ return {
       if not status_ok then
         return
       end
-      local transp = true
-      local sidebar = "transparent" --"dark , transparent, normal"
+      local transp = false
+      local sidebar = "dark" --"dark , transparent, normal"
       tokyonight.setup({
         -- your configuration comes here
         -- or leave it empty to use the default settings
