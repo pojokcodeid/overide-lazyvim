@@ -7,7 +7,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ![home!](img/dashboard.png)
 
-## Transparant
+## Home
 
 ![home!](img/home.png)
 
