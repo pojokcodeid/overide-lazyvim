@@ -8,9 +8,21 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
+  ui = {
+    border = "none",
+    browser = "chrome",
+    throttle = 40,
+    custom_keys = { ["<localleader>l"] = false },
+    icons = {
+      ft = "",
+      lazy = "󰂠 ",
+      loaded = "",
+      not_loaded = "",
+    },
+  },
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim",                            import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.lang.typescript" },

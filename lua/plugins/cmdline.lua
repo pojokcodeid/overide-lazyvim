@@ -14,7 +14,7 @@ return {
     dependencies = {
       { "MunifTanjim/nui.nvim", enabled = use_noice },
     },
-    event = "BufWinEnter",
+    event = "VeryLazy",
     opts = {
       messages = {
         enabled = false,
