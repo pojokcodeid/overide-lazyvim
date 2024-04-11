@@ -9,7 +9,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
   ui = {
-    border = "none",
+    border = "rounded",
     browser = "chrome",
     throttle = 40,
     custom_keys = { ["<localleader>l"] = false },

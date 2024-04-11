@@ -82,8 +82,18 @@ return {
           end,
         },
         window = {
-          completion = cmp.config.window.bordered(),
-          documentation = cmp.config.window.bordered(),
+          -- completion = cmp.config.window.bordered(),
+          -- documentation = cmp.config.window.bordered(),
+          completion = {
+            border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+            winhighlight = "Normal:bg,FloatBorder:BorderBG,CursorLine:PmenuSel,Search:None",
+            scrollbar = true,
+          },
+          documentation = {
+            border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+            winhighlight = "Normal:bg,FloatBorder:BorderBG,CursorLine:PmenuSel,Search:None",
+            scrollbar = true,
+          },
         },
         experimental = {
           ghost_text = true,

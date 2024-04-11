@@ -9,8 +9,8 @@ return {
       if not status_ok then
         return
       end
-      local transp = true
-      local sidebar = "transparent" --"dark , transparent, normal"
+      local transp = false
+      local sidebar = "normal" --"dark , transparent, normal"
       tokyonight.setup({
         -- your configuration comes here
         -- or leave it empty to use the default settings
@@ -55,6 +55,12 @@ return {
           highlights.Underlined = {
             underline = false,
           }
+          highlights.NvimTreeWinSeparator = {
+            fg = colors.border,
+          }
+          highlights.BufferLineFill = { bg = colors.bg }
+          highlights.NvimTreeSpecialFile = { fg = colors.purple, underline = false }
+          highlights["@tag.attribute"] = { fg = colors.green1, italic = true }
         end,
       })
     end,
