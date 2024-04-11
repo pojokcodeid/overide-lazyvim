@@ -143,6 +143,7 @@ return {
             "lazy",
             "mason",
             "neo-tree",
+            "lazyterm",
           },
           always_divide_middle = true,
         },
