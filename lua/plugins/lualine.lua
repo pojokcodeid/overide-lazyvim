@@ -99,7 +99,7 @@ return {
       }
 
       local spaces = function()
-        return " " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+        return "󰌒 " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
       end
 
       local mode = {
@@ -108,15 +108,15 @@ return {
         separator = { left = " " },
         -- right_padding = 3,
         fmt = function(str)
-          return " " .. str
+          return " " .. str
         end,
       }
 
       local get_branch = function()
         if vim.b.gitsigns_head ~= nil then
-          return " " .. vim.b.gitsigns_head
+          return "" .. vim.b.gitsigns_head
         else
-          return " " .. vim.fn.fnamemodify("null", ":t")
+          return "" .. vim.fn.fnamemodify("null", ":t")
         end
       end
 

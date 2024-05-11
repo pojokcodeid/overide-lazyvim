@@ -14,7 +14,7 @@ return {
         border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
         icons = {
           package_pending = " ",
-          package_installed = " ",
+          package_installed = " ",
           package_uninstalled = " ",
         },
         keymaps = {
